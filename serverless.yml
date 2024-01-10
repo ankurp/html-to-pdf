@@ -1,0 +1,12 @@
+org: change-me
+app: html-to-pdf
+service: html-to-pdf
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  html-to-pdf:
+    handler: index.handler
