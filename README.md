@@ -32,3 +32,14 @@ Which should result in response similar to the following:
   }
 }
 ```
+
+### Sample Request
+
+```
+curl -v \
+	-X POST \
+	-H "Content-Type: application/json" \
+	-H "x-api-key: ..." \
+	-d "{\"html\":\"<html><body><h1>Hello World</h1></body></html>\"}" \
+	"https://api.us-east-1.amazonaws.com/default/your-service-html-to-pdf"
+```
