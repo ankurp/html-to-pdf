@@ -1,6 +1,7 @@
-const chromium = require("@sparticuz/chromium")
-const puppeteer = require("puppeteer-core")
+const chromium = require("@sparticuz/chromium");
+const puppeteer = require("puppeteer-core");
 
+// Disable GPU acceleration unless needed
 chromium.setGraphicsMode = false;
 
 exports.handler = async (event) => {
